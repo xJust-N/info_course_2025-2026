@@ -1,0 +1,32 @@
+.main-container {
+    margin: 0 auto;
+}
+
+.vert-container {
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black solid 1px;
+    border-radius: 7px;
+    width: 500px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: black solid 3px;
+    border-radius: 5px;
+}
+
+#moving-block {
+    position: relative;
+    left: 0;
+}
+
+#counter {
+    font-size: 80px;
+    margin: 20px;
+}

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.demo-section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.demo-section h2 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Базовые стили для flex контейнеров */
+.flex-container {
+    display: flex;
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 150px;
+    border: 2px solid #ccc;
+}
+
+.flex-item {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    min-width: 80px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Специфические стили для демонстраций */
+.direction-demo {
+    min-height: 200px;
+}
+
+.justify-demo {
+    min-height: 100px;
+}
+
+.align-demo {
+    min-height: 200px;
+    align-items: stretch;
+}
+
+.tall {
+    min-height: 120px;
+    background: linear-gradient(45deg, #4834d4, #686de0);
+}
+
+.wrap-demo {
+    flex-wrap: nowrap;
+    min-height: 100px;
+}
+
+.wrap-demo .flex-item {
+    min-width: 120px;
+}
+
+/* Управление отдельными элементами */
+.self-demo {
+    align-items: center;
+    min-height: 200px;
+}
+
+.self-start {
+    align-self: flex-start !important;
+    background: linear-gradient(45deg, #4834d4, #686de0) !important;
+}
+
+.self-center {
+    align-self: center !important;
+    background: linear-gradient(45deg, #00b894, #00cec9) !important;
+}
+
+.self-end {
+    align-self: flex-end !important;
+    background: linear-gradient(45deg, #fdcb6e, #ffeaa7) !important;
+}
+
+/* Порядок элементов */
+.order-demo .order-1 { order: 1; background: linear-gradient(45deg, #00b894, #00cec9) !important; }
+.order-demo .order-2 { order: 2; background: linear-gradient(45deg, #fdcb6e, #ffeaa7) !important; }
+.order-demo .order-3 { order: 3; }
+.order-demo .order-4 { order: 4; background: linear-gradient(45deg, #4834d4, #686de0) !important; }
+
+/* Гибкость элементов */
+.grow-demo .grow-1 { flex-grow: 1; background: linear-gradient(45deg, #00b894, #00cec9) !important; }
+.grow-demo .grow-2 { flex-grow: 2; background: linear-gradient(45deg, #fdcb6e, #ffeaa7) !important; }
+.grow-demo .grow-3 { flex-grow: 3; background: linear-gradient(45deg, #4834d4, #686de0) !important; }
+
+/* Респонсивная навигация */
+.responsive-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-menu a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    transition: background 0.3s;
+}
+
+.nav-actions button:hover {
+    background: #2980b9;
+}
+
+/* Карточки */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #7f8c8d;
+    flex-grow: 1;
+}
+
+/* Элементы управления */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.controls button:hover {
+    background: #2980b9;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .responsive-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+    }
+    
+    .controls {
+        flex-direction: column;
+    }
+    
+    .controls button {
+        width: 100%;
+    }
+}
