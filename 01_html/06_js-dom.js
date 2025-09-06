@@ -2,8 +2,10 @@ const colors = ['red', 'green', 'blue', 'yellow', 'white', 'black', 'purple']
 
 let movingBlockPositionX = 0
 
+//при загрузке страницы
 window.onload = function(event) {
     console.log('page loaded')
+        //листенер на нажатие любой кнопки клавиатуры
     document.addEventListener('keydown', handleKeyBoardEvent)
 }
 
@@ -30,6 +32,7 @@ function handleKeyBoardEvent(event) {
     }
 }
 
+//перемещение блока по кнопке
 function moveBlockLeft() {
     const e = document.getElementById('moving-block')
     movingBlockPositionX -= 10

@@ -1,3 +1,4 @@
+/* *-применить ко всему */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +40,7 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
-
+/* ко всем h2 в секции demo section */
 .demo-section h2 {
     color: #333;
     margin-bottom: 25px;
@@ -49,6 +50,7 @@ h2 {
 .flex-container {
     display: flex;
     background: #e0e0e0;
+    /* отступ перед текстом */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -153,7 +155,7 @@ h2 {
     margin: 0;
     padding: 0;
 }
-
+/* ко всем дочерним а применяется стиль */
 .nav-menu a {
     color: white;
     text-decoration: none;
@@ -161,7 +163,7 @@ h2 {
     border-radius: 5px;
     transition: background 0.3s;
 }
-
+/* hover - накладывается при наведении */
 .nav-menu a:hover {
     background: rgba(255,255,255,0.1);
 }
@@ -237,7 +239,7 @@ h2 {
     background: #2980b9;
 }
 
-/* Адаптивность */
+/* Адаптивность (если экран меньше 768пкс то применяется) */
 @media (max-width: 768px) {
     .responsive-nav {
         flex-direction: column;

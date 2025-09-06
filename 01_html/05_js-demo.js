@@ -1,7 +1,7 @@
 // Hello world
 console.log('Hello world!')
 
-// Переменные и константы
+// Переменные и константы(динамическая типизация)
 const a = 1
 let d = 2.0
 let str1 = 'aaa'

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic";
+}
+
+.flex-container{
+    display: flex;
+    background: #dfdde2;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    min-height: 150px;
+    border: 2px solid black;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.enter-section{
+    background: whitesmoke;
+    font-family: sans-serif;
+    padding: 30px;
+    margin: 30px;
+
+}
+
+h1{
+    text-align: center;
+    text-decoration-color: #333333;
+    scale: 1;
+    background: crimson;
+    padding: 30px;
+}
