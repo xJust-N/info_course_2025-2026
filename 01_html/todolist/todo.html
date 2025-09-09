@@ -9,12 +9,19 @@
     <div class="container">
         <h1>TODO List</h1>
 
-        <section class="enter-section">
+        <section class="text-input-section">
             <h2>Введите задачу</h2>
-            <div class="flex-container"></div>
+            <div class="flex-container">
+                <input type="text" class="text-input" id="input">
+                <button onclick="addTask()" class ="add-button">✔</button>
+            </div>
+        </section>
+        <section class="task-list-section">
+            <h2>Список задач:</h2>
+            <div class="task-flex-container" id="taskContainer"></div>
         </section>
 
-</div>
-
+    </div>
+    <script src="todo.js"></script>
 </body>
 </html>
